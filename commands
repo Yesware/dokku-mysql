@@ -170,7 +170,7 @@ case "$1" in
     PASSWORD=$(cat "$SERVICE_ROOT/PASSWORD")
     has_tty && SERVICE_TTY_OPTS="-t"
 
-    docker exec -i $SERVICE_TTY_OPTS "$SERVICE_NAME" mysql --user=mysql --password="$PASSWORD" --database="$SERVICE"
+    docker exec -i $SERVICE_TTY_OPTS "$SERVICE_NAME" mysql --user=root
     ;;
 
   $PLUGIN_COMMAND_PREFIX:info)
