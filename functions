@@ -272,7 +272,7 @@ service_url() {
 
   local PASSWORD="$(cat "$SERVICE_ROOT/PASSWORD")"
 
-  if [[ -e "$SERVICE_ROOT/DATABASE_NAME" ]];then
+  if [[ -e "$SERVICE_ROOT/DATABASE_NAME" ]]; then
     local DATABASE_NAME=$(cat "$SERVICE_ROOT/DATABASE_NAME")
   else
     local DATABASE_NAME="$SERVICE"
