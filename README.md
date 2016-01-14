@@ -61,7 +61,7 @@ export MYSQL_CUSTOM_ENV="USER=alpha;HOST=beta"
 
 # you can specify custom password and database name
 # variables
-export MYSQL_CUSTOM_PASSWORD="some-password"
+export MYSQL_PASSWORD="some-password"
 export MYSQL_DATABASE_NAME="some-database-name"
 
 
